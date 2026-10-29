@@ -19,7 +19,7 @@ import org.springframework.boot.context.properties.bind.DefaultValue;
 @ConfigurationProperties("neuroscape")
 public record NeuroscapeProperties(
         @DefaultValue("48") int gridResolution,
-        @DefaultValue("80") long tickMillis,
+        @DefaultValue("60") long tickMillis,
         @DefaultValue("2") int epochsPerTick,
         @DefaultValue("64") int maxSessions,
         @DefaultValue("30m") Duration sessionIdleTimeout,
