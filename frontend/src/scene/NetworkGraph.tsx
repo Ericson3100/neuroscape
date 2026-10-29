@@ -38,7 +38,7 @@ const smooth = (t: number) => t * t * (3 - 2 * t);
 export function NetworkGraph({ layers, activations, reducedMotion }: Props) {
   const sizes = useMemo(() => layerSizes(layers), [layers]);
   const shapeKey = sizes.join('-');
-  const positions = useMemo(() => neuronPositions(sizes), [shapeKey]); // eslint-disable-line react-hooks/exhaustive-deps
+  const positions = useMemo(() => neuronPositions(sizes), [shapeKey]);
   const edges = useMemo<Edge[]>(() => {
     const list: Edge[] = [];
     for (let l = 0; l < positions.length - 1; l++) {

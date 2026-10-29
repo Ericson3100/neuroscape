@@ -39,3 +39,4 @@ build/
 frontend/node/
 frontend/node_modules/
 frontend/dist/
+*.tsbuildinfo
