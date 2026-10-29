@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:neuroscape-test;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+neuroscape:
+  grid-resolution: 12
